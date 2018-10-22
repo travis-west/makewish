@@ -1,0 +1,23 @@
+/*  style.css */
+
+.form-box {
+    width: 45%;
+    display: inline-block;
+    margin: 0px 15px 15px 5px;
+    min-width: 400px;
+    vertical-align: top;
+}        
+
+.input-group-text {
+    width: 100px;
+}
+
+.input-group-icon {
+    width: 50px;
+}
+
+#pwd-icon{
+    width: 32px;
+    opacity: .7;
+    padding-right: 7px;
+}
