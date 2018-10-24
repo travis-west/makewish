@@ -91,12 +91,16 @@
         <tbody>
             {% for granted in grantedwishes %}    
             <tr>
-                <td> {{ granted.item }} </td>
+                <td> {{ granted.item }}</td>
                 <td> {{ granted.wisher.first_name}} {{ granted.wisher.last_name}}  </td>
                 <td> {{ granted.created_at }}  </td>
                 <td> {{ granted.granted_at }}</td>
-                <td></td>
-                <td><a href="/wishes/{{granted.id}}/like">like</a></td>
+                <td> {{ granted.liker.count }}</td>
+                <td>
+                    {% if request.session.user_id != granted.wisher_id  %}
+                         <a href="/wishes/{{granted.id}}/like">like</a>
+                    {% endif %}
+                </td>
             </tr>
             {% endfor %}
         </tbody>

@@ -56,16 +56,16 @@
             <div class="input-group-prepend">
                 <span class="input-group-text">I wish for</span>
             </div>
-            <input type="text" name="item" class="form-control" placeholder="at least 3 letters" value={{wish.item}} >
+            <input type="text" name="item" class="form-control" placeholder="at least 3 letters" value="{{wish.item}}" >
         </div>
         <!--  last name -->
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text">Description</span>
             </div>
-            <input type="text" name="description" class="form-control" placeholder="at least 3 letters" value={{wish.description}}>
+            <input type="text" name="description" class="form-control" placeholder="at least 3 letters" value="{{wish.description}}">
         </div>
-        <a href="#" type="button" class="btn btn-danger">Cancel</a>   
+        <a href="/wishes" type="button" class="btn btn-danger">Cancel</a>   
         <input type="hidden" name="wish_id" value="{{wish.id}}">      
         <input type="submit" class="btn btn-dark" value="Submit">
     </form>

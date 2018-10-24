@@ -6,6 +6,7 @@ urlpatterns = [
     url(r'^(\d+)/edit/', views.edit),
     url(r'^(\d+)/destroy/$', views.destroy),
     url(r'^(\d+)/grant/$', views.grant),
+    url(r'^(\d+)/like/$', views.like),
 
     url(r'^create', views.create),
     url(r'^update', views.update),

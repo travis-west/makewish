@@ -31,6 +31,7 @@ class Wish(models.Model):
     item = models.CharField(max_length=250)
     description = models.CharField(max_length=255)
     wisher = models.ForeignKey(User, related_name = "wishes")
+    liker = models.ManyToManyField(User, related_name = "likes")
     created_at = models.DateTimeField(auto_now_add = True)
     updated_at = models.DateTimeField(auto_now = True)
     granted_at = models.DateTimeField(null=True, blank=True)

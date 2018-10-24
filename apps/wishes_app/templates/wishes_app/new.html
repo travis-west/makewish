@@ -14,7 +14,7 @@
 {% load static %}      
 <link rel="stylesheet" href="{% static 'users_app/css/style.css' %}">
     
-    <title>Login and Registration</title>
+    <title>Make a Wish</title>
     <style>
     </style>
 </head>
@@ -22,7 +22,8 @@
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <ul class="navbar-nav">
             <li class="nav-item active">
-            <a class="nav-link" href="/users/{{request.session.user_id}}">Welcome {{ request.session.first_name }}!</a>
+                   <!-- href="/users/{{request.session.user_id}}" -->
+            <a class="nav-link" href="/wishes/">Welcome {{ request.session.first_name }}!</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/wishes/stats">View Stats</a>
@@ -65,7 +66,7 @@
             </div>
             <input type="text" name="description" class="form-control" placeholder="at least 3 letters">
         </div>
-        <a href="#" type="button" class="btn btn-danger">Cancel</a>        
+        <a href="/wishes/" type="button" class="btn btn-danger">Cancel</a>        
         <input type="submit" class="btn btn-dark" value="Submit">
     </form>
 
