@@ -6,7 +6,7 @@ certifi==2018.10.15
 cffi==1.11.5
 chardet==3.0.4
 decorator==4.3.0
-Django==1.10
+Django==2.2.24
 idna==2.7
 ipython==7.0.1
 ipython-genutils==0.2.0
